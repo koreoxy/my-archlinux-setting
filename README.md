@@ -1,5 +1,7 @@
 # my-archlinux-setting
 
+### Reference
+https://github.com/prasanthrangan/hyprdots
 
 ### Change Languages Arch Linux
 1. Add languages by editing `/etc/locale.gen.` Uncomment the languages you want to
