@@ -19,6 +19,26 @@ reference : https://wiki.archlinux.org/title/XAMPP
 
 </br>
 
+
+### Install Composer
+reference : https://getcomposer.org/download
+
+1. Update package
+  ```cli
+# sudo pacman -Sy
+```
+2. install composer
+  ```cli
+# sudo pacman -S composer
+```
+3. check version composer
+  ```cli
+# composer -v
+```
+
+
+</br>
+
 ### Change Languages Arch Linux
 1. Add languages by editing `/etc/locale.gen.` Uncomment the languages you want to
 ```cli
