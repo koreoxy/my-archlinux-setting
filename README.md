@@ -72,6 +72,7 @@ Output Image :
 
 
 ## Post Install Arch Linux
+- Change session cli to dekstop environment `ALT F1 or F2`
 - Upadate all package
 ```cli
 # sudo pacman -Syu
@@ -127,6 +128,11 @@ fi
 
 // Add script
 exec startplasma-x11
+```
+
+- Install konsole terminal KDE
+```cli
+# sudo pacman -S konsole
 ```
 
 <hr>
