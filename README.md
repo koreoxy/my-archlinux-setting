@@ -96,6 +96,16 @@ Output Image :
 # yay -S firefox
 ```
 
+- Install xorg for graphics
+```cli
+# sudo pacman -S xorg
+```
+
+- Install desktop environment (KDE Plasma)
+```cli
+# sudo pacman -S plasma-desktop
+```
+
 <hr>
 
 </br>
