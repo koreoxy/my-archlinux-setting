@@ -135,6 +135,12 @@ exec startplasma-x11
 # sudo pacman -S konsole
 ```
 
+
+- Install fonts
+```cli
+# sudo pacman -S gnu-free-fonts noto-fonts ttf-jetbrains-mono
+```
+
 <hr>
 
 </br>
