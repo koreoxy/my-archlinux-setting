@@ -106,6 +106,19 @@ Output Image :
 # sudo pacman -S plasma-desktop
 ```
 
+- Install xorg-xinit
+```cli
+# sudo pacman -S xorg-xinit
+```
+
+- Edit file xinitrc
+```cli
+# vim .xinitrc
+
+// Add script
+exec startplasma-x11
+```
+
 <hr>
 
 </br>
