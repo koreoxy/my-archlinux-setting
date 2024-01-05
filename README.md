@@ -111,6 +111,16 @@ Output Image :
 # sudo pacman -S xorg-xinit
 ```
 
+- Add script file .bash_profile
+```cli
+# vim .bash_profile
+
+// Add script
+if [ -z "${DISPLAY}"] && [ "${XDG_VTNR}" -eq 1 ]; then
+    exec startx
+fi
+```
+
 - Edit file xinitrc
 ```cli
 # vim .xinitrc
