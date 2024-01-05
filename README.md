@@ -5,6 +5,58 @@ https://github.com/prasanthrangan/hyprdots
 
 </br>
 
+## Install Arch Linux
+1. synchronizing package database
+  ```cli
+# pacman -Syy
+```
+
+2. check partition
+  ```cli
+# lsblk
+```
+
+3. format partition
+  ```cli
+# gdisk /dev/"name disk"
+# gdisk /dev/sda
+```
+
+3. format partition
+  ```cli
+# gdisk /dev/"name disk"
+# gdisk /dev/sda
+```
+Output :
+![VirtualBoxVM_XdpMEIa01p](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/6193f2ee-2793-4961-bca6-ef00ce1e46d4)
+
+4. install archlinux keyring package
+  ```cli
+# pacman -S archlinux-keyring
+```
+
+5. update package
+  ```cli
+# pacman -Sy archinstall
+```
+
+6. trigger installation
+  ```cli
+# archinstall
+```
+Output Image :
+![VirtualBoxVM_uCfvdjegzd](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/0247935f-c055-4170-9e88-4c31da1d813b)
+![bPtMg06mBr](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/60c4b0c2-ebf1-421e-b9a3-a32f356ef796)
+
+- Aditional Package :
+  ![M72VmRaGBI](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/86e07e4c-c963-4680-9b20-aa21739a9e91)
+
+
+
+
+
+</br>
+
 ### Install xampp and configuration
 reference : https://wiki.archlinux.org/title/XAMPP
 
