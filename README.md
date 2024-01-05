@@ -174,11 +174,30 @@ reference : https://dwm.suckless.org/
 # mv dwm dmenu st suckless/
 ```
 
-5. into file dwm and install 
+5. into file dwm, dmenu and st and install 
   ```cli
 # cd dwm
 # sudo make clean install
 ```
+
+5. edit script file .xinitrc (Home directory)
+  ```cli
+# vim .xinitrc
+
+// Add script
+#exec startplasma-x11
+exec dwm
+```
+
+6. Keybind dwm
+- Open terminal `ALT + SHIFT + ENTER`
+- Toggle forward and backward between window viewing  FORWARD = `ALT + J`, BACKWARD = `ALT + K`
+- Close Window on active `ALT + SHIFT + c`
+- Run program with dmenu `ALT + p`
+- Move workspace `ALT + 1 2 3 4`
+- Move window to different workspace `ALT + SHIFT + 1 2 3 4`
+- move space window to left `ALT + h`, right `ALT + l`
+- Move window to down `ALT + d` to left `ALT + i`
 
 <hr>
 
