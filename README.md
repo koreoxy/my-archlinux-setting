@@ -1,9 +1,12 @@
-# my-archlinux-setting
+# My Arch Linux Setting
 
 ### Reference
 https://github.com/prasanthrangan/hyprdots
 
+
+
 </br>
+<hr>
 
 ## Install Arch Linux
 1. synchronizing package database
@@ -63,11 +66,11 @@ Output Image :
 # shutdown now
 ```
 
-
+<hr>
 
 </br>
 
-### Install xampp and configuration
+## Install xampp and configuration
 reference : https://wiki.archlinux.org/title/XAMPP
 
 1. Download xampp for linux on website https://www.apachefriends.org/download.html
@@ -98,10 +101,11 @@ reference : https://getcomposer.org/download
 # composer -v
 ```
 
+<hr>
 
 </br>
 
-### Change Languages Arch Linux
+## Change Languages Arch Linux
 1. Add languages by editing `/etc/locale.gen.` Uncomment the languages you want to
 ```cli
 #en_SG ISO-8859-1
