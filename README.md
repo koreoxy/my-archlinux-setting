@@ -45,13 +45,23 @@ Output :
 # archinstall
 ```
 Output Image :
-![VirtualBoxVM_uCfvdjegzd](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/0247935f-c055-4170-9e88-4c31da1d813b)
-![bPtMg06mBr](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/60c4b0c2-ebf1-421e-b9a3-a32f356ef796)
+- Setup Partition :
+  ![VirtualBoxVM_uCfvdjegzd](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/0247935f-c055-4170-9e88-4c31da1d813b)
+  ![bPtMg06mBr](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/60c4b0c2-ebf1-421e-b9a3-a32f356ef796)
 
 - Aditional Package :
   ![M72VmRaGBI](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/86e07e4c-c963-4680-9b20-aa21739a9e91)
 
+- All Setting Installation :
+  ![VirtualBoxVM_k5i7UXRfhE](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/608888a8-a93e-44a3-a0db-64a939ea7553)
 
+
+
+7. After installation done reboot or shutdown computer
+  ```cli
+# reboot
+# shutdown now
+```
 
 
 
