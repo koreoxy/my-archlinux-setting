@@ -70,6 +70,75 @@ Output Image :
 
 </br>
 
+
+## Post Install Arch Linux
+- Upadate all package
+```cli
+# sudo pacman -Syu
+```
+- Install app
+```cli
+# sudo pacman -S firefox
+```
+
+- Install app
+```cli
+# sudo pacman -S firefox
+```
+
+- Install yay package
+```cli
+# git clone https://aur.archlinux.org/yay-bin.git
+# cd yay-bin
+# makepkg -si
+
+// install app with yay
+# yay -S firefox
+```
+
+<hr>
+
+</br>
+
+
+## Install Window Manager dwm
+reference : https://dwm.suckless.org/
+
+1. clone dwm
+  ```cli
+# git clone https://git.suckless.org/dwm
+```
+
+2. clone dmenu
+  ```cli
+# git clone https://git.suckless.org/dmenu
+```
+
+3. clone st
+  ```cli
+# git clone https://git.suckless.org/st
+```
+
+4. create folder
+  ```cli
+# mdkir suckless
+```
+
+5. move file dwm, dmenu and st to folder suckless
+  ```cli
+# mv dwm dmenu st suckless/
+```
+
+5. into file dwm and install 
+  ```cli
+# cd dwm
+# sudo make clean install
+```
+
+<hr>
+
+</br>
+
 ## Install xampp and configuration
 reference : https://wiki.archlinux.org/title/XAMPP
 
