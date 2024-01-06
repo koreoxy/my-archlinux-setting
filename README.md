@@ -215,8 +215,9 @@ exec dwm
 ## Patching dwm
 1. Download patches : https://dwm.suckless.org/patches/
 2. create folder in `suckless/dwm/patches`
-3. install patch `patch -i patches/dwm-name-version.diff`
-4. after isntall patch `sudo make clean install` on folder dwm
+3. copy file config `cp config.h config.def.h`
+4. install patch `patch -i patches/dwm-name-version.diff`
+5. after isntall patch `sudo make clean install` on folder dwm
 
 
 
