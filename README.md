@@ -242,6 +242,12 @@ see general command `man feh`
 2. run picom `picom &`
 3. open folder xdg `cd /etc/xdg/`
 4. open file picom.conf `sudo vim picom.conf`
+5. add script :
+   
+![A83RxMDKBu](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/2af04cc3-f975-4fcf-bd8c-e06ec72ff5cc)
+![QD7shlnnWe](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/24e2abb8-743c-44f3-b2b6-90e416a158fe)
+![VirtualBoxVM_wDM4tCMHF3](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/d0a35950-8185-4e41-88e1-e7b254686457)
+
 
 
 <hr>
