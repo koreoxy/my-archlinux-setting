@@ -236,6 +236,18 @@ see general command `man feh`
 
 </br>
 
+
+### Opacity or blur terminal
+1. install picom `sudo pacman -S picom`
+2. run picom `picom &`
+3. open folder xdg `cd /etc/xdg/`
+4. open file picom.conf `sudo vim picom.conf`
+
+
+<hr>
+
+</br>
+
 ## Install xampp and configuration
 reference : https://wiki.archlinux.org/title/XAMPP
 
