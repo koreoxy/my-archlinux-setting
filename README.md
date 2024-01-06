@@ -4,6 +4,14 @@
 https://github.com/prasanthrangan/hyprdots
 
 
+## Command Arch Linux
+|      Command                                    |                     Description                               | 
+| :-----                                         |                          :---                              |  
+| xrandr                                          |      Check list resolution monitor             |  
+| xrandr --output "Virtual-1" --mode 1920x1080   |      Change resolution monitor             |  
+
+
+
 
 </br>
 <hr>
@@ -198,6 +206,14 @@ exec dwm
 - Move window to different workspace `ALT + SHIFT + 1 2 3 4`
 - move space window to left `ALT + h`, right `ALT + l`
 - Move window to down `ALT + d` to left `ALT + i`
+
+<hr>
+
+</br>
+
+
+## Patching dwm
+
 
 <hr>
 
