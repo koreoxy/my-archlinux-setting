@@ -225,6 +225,17 @@ exec dwm
 
 </br>
 
+
+### Set wallpaper
+see general command `man feh`
+1. install feh `sudo pacman -S feh`
+2. set wallpaper `feh --bg-scale Pictures/name-wallpaper`
+
+
+<hr>
+
+</br>
+
 ## Install xampp and configuration
 reference : https://wiki.archlinux.org/title/XAMPP
 
