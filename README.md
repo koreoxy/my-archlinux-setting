@@ -225,6 +225,24 @@ exec dwm
 
 </br>
 
+## File .xinitrc
+```cli
+~/.fehbg &
+xrandr --output "Virtual-1" --mode 1280x720 &
+picom &
+slstatus &
+
+#exec startplasma-x11
+exec dwm
+
+```
+
+
+
+<hr>
+
+</br>
+
 
 ### Set wallpaper
 see general command `man feh`
