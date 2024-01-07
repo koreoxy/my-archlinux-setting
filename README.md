@@ -33,11 +33,6 @@ https://github.com/prasanthrangan/hyprdots
 # gdisk /dev/sda
 ```
 
-3. format partition
-  ```cli
-# gdisk /dev/"name disk"
-# gdisk /dev/sda
-```
 Output :
 ![VirtualBoxVM_XdpMEIa01p](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/6193f2ee-2793-4961-bca6-ef00ce1e46d4)
 
@@ -182,13 +177,13 @@ reference : https://dwm.suckless.org/
 # mv dwm dmenu st suckless/
 ```
 
-5. into file dwm, dmenu and st and install 
+6. open file dwm, dmenu and st and install 
   ```cli
 # cd dwm
 # sudo make clean install
 ```
 
-5. edit script file .xinitrc (Home directory)
+7. edit script file .xinitrc (Home directory)
   ```cli
 # vim .xinitrc
 
@@ -197,7 +192,7 @@ reference : https://dwm.suckless.org/
 exec dwm
 ```
 
-6. Keybind dwm
+8. Keybind dwm
 - Open terminal `ALT + SHIFT + ENTER`
 - Toggle forward and backward between window viewing  FORWARD = `ALT + J`, BACKWARD = `ALT + K`
 - Close Window on active `ALT + SHIFT + c`
