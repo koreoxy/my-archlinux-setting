@@ -267,6 +267,17 @@ see general command `man feh`
 
 </br>
 
+
+# Install App
+
+## Install Audio
+1. install pipewire `sudo pacman -S pipewire pipewire-pulse`
+2. install pavucontrol `sudo pacman -S pavucontrol`
+3. Restart computer
+
+</br>
+
+
 ## Install xampp and configuration
 reference : https://wiki.archlinux.org/title/XAMPP
 
