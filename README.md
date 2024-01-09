@@ -267,6 +267,19 @@ see general command `man feh`
 
 </br>
 
+### Generate Color theme with pywal
+reference : https://github.com/dylanaraps/pywal
+
+1. Install pywwal `sudo pacman -S python-pywal`
+2. generate color wallpaper which is being used `wal -i wallpaper/name-wallpaper.png`
+3. open `cd .cache/wal` to see color results
+4. add `#include "/home/<USER>/.cache/wal/colors-wal-dwm.h"` in file `config.h` on folder `/dwm` 
+
+
+<hr>
+
+</br>
+
 
 # Install App
 
