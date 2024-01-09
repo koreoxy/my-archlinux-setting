@@ -289,6 +289,7 @@ reference : https://wiki.archlinux.org/title/XAMPP
 6. after install start xampp apache with this command `# /opt/lampp/lampp startapache`
 7. start mysql `# /opt/lampp/lampp startmysql`
 8. example command to start,stop,restart xampp `# /opt/lampp/xampp start,stop,restart`
+9. open localhost in browser `http://localhost/phpmyadmin/`
 
 </br>
 
