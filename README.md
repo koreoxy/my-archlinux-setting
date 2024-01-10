@@ -201,6 +201,7 @@ exec dwm
 - Move window to different workspace `ALT + SHIFT + 1 2 3 4`
 - move space window to left `ALT + h`, right `ALT + l`
 - Move window to down `ALT + d` to left `ALT + i`
+- Change mode window to float `ALT + SPACE`
 
 <hr>
 
