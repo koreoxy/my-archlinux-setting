@@ -202,6 +202,7 @@ exec dwm
 - move space window to left `ALT + h`, right `ALT + l`
 - Move window to down `ALT + d` to left `ALT + i`
 - Change mode window to float `ALT + SPACE`
+- hide top bar dmenu `ALT + B`
 
 <hr>
 
