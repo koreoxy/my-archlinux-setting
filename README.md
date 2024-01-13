@@ -1,7 +1,8 @@
 # My Arch Linux Setting
 
-### Reference
-https://github.com/prasanthrangan/hyprdots
+## My Setup Image
+![my-arch-linux-setup](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/3e3bb5f5-b208-4d75-b85a-de5f2c828831)
+
 
 
 ## Command Arch Linux
