@@ -211,7 +211,7 @@ exec dwm
 </br>
 
 
-## Patching dwm
+### Patching dwm
 1. Download patches : https://dwm.suckless.org/patches/
 2. create folder in `suckless/dwm/patches`
 3. copy file config `cp config.h config.def.h`
@@ -224,7 +224,7 @@ exec dwm
 
 </br>
 
-## File .xinitrc
+### File .xinitrc
 ```cli
 ~/.fehbg &
 xrandr --output "Virtual-1" --mode 1280x720 &
