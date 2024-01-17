@@ -8,6 +8,17 @@
 - [Command Arch Linux](#command-arch-linux)
 - [Install Arch Linux](#install-arch-linux)
 - [Post Install Arch Linux](#post-install-arch-linux)
+- [Install Window Manager dwm](#install-window-manager-dwm)
+  - [Patching dwm](#patching-dwm)
+  - [File .xinitrc](#file-xinitrc)
+  - [Set wallpaper](#set-wallpaper)
+  - [Opacity or blur terminal](#opacity-or-blur-terminal)
+  - [Generate Color theme with pywal](#generate-color-theme-with-pywal)
+- [Install App](#install-app)
+  - [Install Audio](#install-audio)
+  - [Install xampp and configuration](#install-xampp-and-configuration)
+  - [Install Composer](#install-composer)
+- [Change Languages Arch Linux](#change-languages-arch-linux)
 
 
 ## Command Arch Linux
@@ -211,7 +222,6 @@ exec dwm
 - hide top bar dmenu `ALT + B`
 - zoom in and zoom out in terminal `CTRL + SHIFT PgUp` and `CTRL + SHIFT + pgDn`
 
-<hr>
 
 </br>
 
@@ -223,9 +233,6 @@ exec dwm
 4. install patch `patch -i patches/dwm-name-version.diff`
 5. after isntall patch `sudo make clean install` on folder dwm
 
-
-
-<hr>
 
 </br>
 
@@ -243,8 +250,6 @@ exec dwm
 
 
 
-<hr>
-
 </br>
 
 
@@ -254,7 +259,6 @@ see general command `man feh`
 2. set wallpaper `feh --bg-scale Pictures/name-wallpaper`
 
 
-<hr>
 
 </br>
 
@@ -272,7 +276,6 @@ see general command `man feh`
 
 
 
-<hr>
 
 </br>
 
@@ -292,7 +295,7 @@ reference : https://github.com/dylanaraps/pywal
 
 # Install App
 
-## Install Audio
+### Install Audio
 1. install pipewire `sudo pacman -S pipewire pipewire-pulse`
 2. install pavucontrol `sudo pacman -S pavucontrol`
 3. Restart computer
@@ -300,7 +303,7 @@ reference : https://github.com/dylanaraps/pywal
 </br>
 
 
-## Install xampp and configuration
+### Install xampp and configuration
 reference : https://wiki.archlinux.org/title/XAMPP
 
 1. Download xampp for linux on website https://www.apachefriends.org/download.html
