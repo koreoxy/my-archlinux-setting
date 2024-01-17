@@ -4,6 +4,11 @@
 ![my-arch-linux-setup](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/3e3bb5f5-b208-4d75-b85a-de5f2c828831)
 
 
+## Jump to
+- [Command Arch Linux](#command-arch-linux)
+- [Install Arch Linux](#install-arch-linux)
+- [Post Install Arch Linux](#post-install-arch-linux)
+
 
 ## Command Arch Linux
 |      Command                                    |                     Description                               | 
