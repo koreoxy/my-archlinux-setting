@@ -181,7 +181,7 @@ reference : https://dwm.suckless.org/
 
 4. create folder
   ```cli
-# mdkir suckless
+# mkdir suckless
 ```
 
 5. move file dwm, dmenu and st to folder suckless
