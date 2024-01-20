@@ -102,11 +102,6 @@ Output Image :
 # sudo pacman -S firefox
 ```
 
-- Install app
-```cli
-# sudo pacman -S firefox
-```
-
 - Install yay package
 ```cli
 # git clone https://aur.archlinux.org/yay-bin.git
