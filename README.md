@@ -15,6 +15,7 @@
   - [Opacity or blur terminal](#opacity-or-blur-terminal)
   - [Generate Color theme with pywal](#generate-color-theme-with-pywal)
 - [Install App](#install-app)
+  - [Install fzf (Fuzzy Finder)](#install-fzf-fuzzy-finder)
   - [Install Audio](#install-audio)
   - [Install xampp and configuration](#install-xampp-and-configuration)
   - [Install Composer](#install-composer)
@@ -289,6 +290,43 @@ reference : https://github.com/dylanaraps/pywal
 
 
 # Install App
+
+### Install fzf (Fuzzy Finder)
+1. Install fzf with yay
+   
+```bash
+yay -S fzf
+```
+
+2. run fzf
+
+```bash
+  fzf
+```
+
+3. open folder with fzf
+   
+```bash
+alias cdf='cd $(find * -type d | fzf)'
+```
+
+4. Custom script fzf
+   
+```bash
+ vim ~/.bashrc
+```
+   
+5. add script in file `.bashrc`
+   
+ ```bash
+ function cdf() {
+   cd "$(find * -type d | fzf)"
+ }
+ ```
+     
+6. run fzf with custom script `cdf`
+
+</br>
 
 ### Install Audio
 1. install pipewire `sudo pacman -S pipewire pipewire-pulse`
