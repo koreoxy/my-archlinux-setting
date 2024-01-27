@@ -233,7 +233,7 @@ exec dwm
 </br>
 
 ### File .xinitrc
-```cli
+```bash
 ~/.fehbg &
 xrandr --output "Virtual-1" --mode 1280x720 &
 picom &
