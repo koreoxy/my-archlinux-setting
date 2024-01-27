@@ -15,6 +15,7 @@
   - [Opacity or blur terminal](#opacity-or-blur-terminal)
   - [Generate Color theme with pywal](#generate-color-theme-with-pywal)
 - [Install App](#install-app)
+  - [Install Docker](#install-docker)
   - [Install fzf (Fuzzy Finder)](#install-fzf-fuzzy-finder)
   - [Install Audio](#install-audio)
   - [Install xampp and configuration](#install-xampp-and-configuration)
@@ -291,6 +292,50 @@ reference : https://github.com/dylanaraps/pywal
 
 # Install App
 
+
+### Install Docker
+**A. Install and Running Dcoker**
+
+1. install docker
+    
+  ```bash
+  sudo pacman -S docker -y
+  ```
+
+2. check version docker
+   
+```bash
+docker --version
+```
+   
+3. install docker desktop, first download docker desktop for arc linux. link : https://docs.docker.com/desktop/release-notes/
+   
+4. and install docker desktop
+   
+```bash
+sudo pacman -U ./docker-desktop-<version>-<arch>.pkg.tar.zst
+```
+
+5. check docker running or not
+```bash
+sudo systemctl status docker 
+```
+
+6. if not running run this command
+```bash
+sudo systemctl start docker
+```
+</br>
+
+**B. Command Docker**
+|      Command                                    |                     Description           | 
+| :-----                                         |                          :---              |  
+|  sudo docker version                           |      Check version docker            |  
+
+
+
+</br>
+
 ### Install fzf (Fuzzy Finder)
 1. Install fzf with yay
    
@@ -301,7 +346,7 @@ yay -S fzf
 2. run fzf
 
 ```bash
-  fzf
+fzf
 ```
 
 3. open folder with fzf
