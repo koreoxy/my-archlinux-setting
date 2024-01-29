@@ -440,7 +440,7 @@ Genertaion complete.
 
 
 ## Backup file .xinitrc manjaro-linux
-```cli
+```bash
 #!/bin/bash
 #
 # ~/.xinitrc
