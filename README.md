@@ -6,6 +6,7 @@
 
 ## Jump to
 - [Command Arch Linux](#command-arch-linux)
+- [My Config file .bashrc](#my-config-file-bashrc)
 - [Install Arch Linux](#install-arch-linux)
 - [Post Install Arch Linux](#post-install-arch-linux)
 - [Install Window Manager dwm](#install-window-manager-dwm)
@@ -31,6 +32,19 @@
 
 
 
+
+</br>
+<hr>
+
+## My Config file .bashrc
+```bash
+function cdf() {
+    cd "$(find * -type d | fzf)"
+}
+
+alias sn='sudo shutdown now'
+
+```
 
 </br>
 <hr>
