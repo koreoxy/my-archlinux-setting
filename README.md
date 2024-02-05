@@ -1,7 +1,8 @@
 # My Arch Linux Setting
 
 ## My Setup Image
-![my-arch-linux-setup](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/3e3bb5f5-b208-4d75-b85a-de5f2c828831)
+![desktopbg](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/fcfd9c26-5db4-4df3-8702-01c5d09a2fb0)
+
 
 
 ## Jump to
