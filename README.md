@@ -20,6 +20,7 @@
   - [Install Docker](#install-docker)
   - [Install fzf (Fuzzy Finder)](#install-fzf-fuzzy-finder)
   - [Install Audio](#install-audio)
+  - [Install Kdenlive](#install-kdenlive)
   - [Install xampp and configuration](#install-xampp-and-configuration)
   - [Install Composer](#install-composer)
 - [Change Languages Arch Linux](#change-languages-arch-linux)
@@ -392,6 +393,21 @@ alias cdf='cd $(find * -type d | fzf)'
 1. install pipewire `sudo pacman -S pipewire pipewire-pulse`
 2. install pavucontrol `sudo pacman -S pavucontrol`
 3. Restart computer
+
+</br>
+
+### Install Kdenlive
+reference : https://linux-packages.com/arch-linux/package/kdenlive
+1. Install kdenlive and update package
+   ```cli
+    sudo pacman -Sy
+    sudo pacman -S kdenlive 
+   ```
+
+3. Uninstall kdenlive
+   ```cli
+    sudo pacman -Rcns kdenlive 
+   ```
 
 </br>
 
