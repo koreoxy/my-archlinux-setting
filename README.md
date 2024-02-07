@@ -21,6 +21,8 @@
   - [Install fzf (Fuzzy Finder)](#install-fzf-fuzzy-finder)
   - [Install Audio](#install-audio)
   - [Install Kdenlive](#install-kdenlive)
+  - [Install GIMP](#install-gimp)
+  - [Install krita](#install-krita)
   - [Install xampp and configuration](#install-xampp-and-configuration)
   - [Install Composer](#install-composer)
 - [Change Languages Arch Linux](#change-languages-arch-linux)
@@ -407,6 +409,38 @@ reference : https://linux-packages.com/arch-linux/package/kdenlive
 3. Uninstall kdenlive
    ```cli
     sudo pacman -Rcns kdenlive 
+   ```
+
+</br>
+
+
+### Install GIMP
+reference : https://archlinux.org/packages/extra/x86_64/gimp/
+1. Install GIMP and update package
+   ```cli
+    sudo pacman -Sy
+    sudo pacman -S gimp 
+   ```
+
+3. Uninstall GIMP
+   ```cli
+    sudo pacman -Rcns gimp 
+   ```
+
+</br>
+
+
+### Install krita
+reference : https://archlinux.org/packages/extra/x86_64/gimp/
+1. Install krita and update package
+   ```cli
+    sudo pacman -Sy
+    sudo pacman -S krita 
+   ```
+
+3. Uninstall krita
+   ```cli
+    sudo pacman -Rcns krita 
    ```
 
 </br>
