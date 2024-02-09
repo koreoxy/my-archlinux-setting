@@ -23,6 +23,7 @@
   - [Install Kdenlive](#install-kdenlive)
   - [Install GIMP](#install-gimp)
   - [Install krita](#install-krita)
+  - [Install Virtualbox](#install-virtualbox)
   - [Install xampp and configuration](#install-xampp-and-configuration)
   - [Install Composer](#install-composer)
 - [Change Languages Arch Linux](#change-languages-arch-linux)
@@ -441,6 +442,24 @@ reference : https://archlinux.org/packages/extra/x86_64/gimp/
 3. Uninstall krita
    ```cli
     sudo pacman -Rcns krita 
+   ```
+
+</br>
+
+### Install Virtualbox
+1. first update system
+   ```bash
+    sudo pacman -Syu
+   ```
+   
+2. Install virtualbox with headers
+   ```bash
+   sudo pacman -S linux$(uname -r | grep -o -E '[0-9]+' | head -n 2 | sed 'N;s/\n//')-headers virtualbox virtualbox-host-dkms
+   ```
+   
+3. Add user to group
+   ```bash
+   sudo usermod -aG vboxusers $USER
    ```
 
 </br>
