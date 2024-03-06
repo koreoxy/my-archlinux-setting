@@ -24,6 +24,7 @@
   - [Install GIMP](#install-gimp)
   - [Install krita](#install-krita)
   - [Install Virtualbox](#install-virtualbox)
+  - [Install Mysql and MySQL Workbench](#install-mysql-and-mysql-workbench)
   - [Install xampp and configuration](#install-xampp-and-configuration)
   - [Install Composer](#install-composer)
 - [Change Languages Arch Linux](#change-languages-arch-linux)
@@ -464,6 +465,44 @@ reference : https://archlinux.org/packages/extra/x86_64/gimp/
 
 </br>
 
+### Install Mysql and MySQL Workbench
+Reference : https://gist.github.com/oddlyspaced/8856bd3db5132ef3714ecc40a9fe37ea
+
+1. Updating system
+   ```bash
+   sudo pacman -Syyu
+   ```
+2. Installing software dependencies
+   ```bash
+   sudo pacman -S git gnome-keyring
+   ```
+3. Compile and Install MySQL Server, Note : (This might take like ~4 hours since it's compiling the source)
+   ```bash
+   git clone https://aur.archlinux.org/mysql.git
+   cd mysql
+   makepkg -si
+   ```
+4. Install MySQL-Workbench
+   ```bash
+   sudo pacman -S mysql-workbench
+   ```
+5. Setting up database
+   ```bash
+   sudo rm -rf /var/lib/mysql
+   sudo mysqld --initialize --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+   # ^ Once the above command is executed successfully, make sure to copy paste the demo password displayed at screen!
+   ```
+6. Enabling the service
+   ```bash
+   sudo systemctl enable --now mysqld
+   ```
+7. Verifying
+   ```bash
+   mysql -u root -p
+   # ^ Enter your dummy password from Part 5
+   ```
+   
+</br>
 
 ### Install xampp and configuration
 reference : https://wiki.archlinux.org/title/XAMPP
