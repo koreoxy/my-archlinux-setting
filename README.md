@@ -482,7 +482,7 @@ Reference : https://gist.github.com/oddlyspaced/8856bd3db5132ef3714ecc40a9fe37ea
    
 3. Compile and Install MySQL Server, Note : (This might take like ~4 hours since it's compiling the source)
    
-   ```cli
+   ```bash
    git clone https://aur.archlinux.org/mysql.git
    cd mysql
    makepkg -si
