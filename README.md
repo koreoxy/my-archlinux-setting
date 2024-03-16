@@ -18,6 +18,7 @@
   - [Generate Color theme with pywal](#generate-color-theme-with-pywal)
 - [Install App](#install-app)
   - [Install Docker](#install-docker)
+  - [Install bat (for cat display)](#install-bat-for-cat-display)
   - [Install fzf (Fuzzy Finder)](#install-fzf-fuzzy-finder)
   - [Install Audio](#install-audio)
   - [Install Kdenlive](#install-kdenlive)
@@ -353,6 +354,17 @@ sudo systemctl start docker
 |  sudo docker version                           |      Check version docker            |  
 
 
+
+</br>
+
+### Install bat (for cat display)
+Reference : https://github.com/sharkdp/bat
+A cat(1) clone with syntax highlighting and Git integration.
+1. Install fzf with yay
+   
+```bash
+sudo pacman -S bat
+```
 
 </br>
 
