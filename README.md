@@ -360,7 +360,7 @@ sudo systemctl start docker
 ### Install bat (for cat display)
 Reference : https://github.com/sharkdp/bat
 A cat(1) clone with syntax highlighting and Git integration.
-1. Install fzf with yay
+1. Install bat
    
 ```bash
 sudo pacman -S bat
