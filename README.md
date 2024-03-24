@@ -1,21 +1,25 @@
 # My Arch Linux Setting
 
 ## My Setup Image
+
 ![desktopbg](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/fcfd9c26-5db4-4df3-8702-01c5d09a2fb0)
 
-
-
 ## Jump to
-- [Command Arch Linux](#command-arch-linux)
-- [My Config file .bashrc](#my-config-file-bashrc)
-- [Install Arch Linux](#install-arch-linux)
-- [Post Install Arch Linux](#post-install-arch-linux)
-- [Install Window Manager dwm](#install-window-manager-dwm)
-  - [Patching dwm](#patching-dwm)
-  - [File .xinitrc](#file-xinitrc)
-  - [Set wallpaper](#set-wallpaper)
-  - [Opacity or blur terminal](#opacity-or-blur-terminal)
-  - [Generate Color theme with pywal](#generate-color-theme-with-pywal)
+
+- [My Arch Linux Setting](#my-arch-linux-setting)
+  - [My Setup Image](#my-setup-image)
+  - [Jump to](#jump-to)
+  - [Command Arch Linux](#command-arch-linux)
+  - [Keybind DWM](#keybind-dwm)
+  - [My Config file .bashrc](#my-config-file-bashrc)
+  - [Install Arch Linux](#install-arch-linux)
+  - [Post Install Arch Linux](#post-install-arch-linux)
+  - [Install Window Manager dwm](#install-window-manager-dwm)
+    - [Patching dwm](#patching-dwm)
+    - [File .xinitrc](#file-xinitrc)
+    - [Set wallpaper](#set-wallpaper)
+    - [Opacity or blur terminal](#opacity-or-blur-terminal)
+    - [Generate Color theme with pywal](#generate-color-theme-with-pywal)
 - [Install App](#install-app)
   - [Install Docker](#install-docker)
   - [Install bat (for cat display)](#install-bat-for-cat-display)
@@ -28,22 +32,44 @@
   - [Install Mysql and MySQL Workbench](#install-mysql-and-mysql-workbench)
   - [Install xampp and configuration](#install-xampp-and-configuration)
   - [Install Composer](#install-composer)
-- [Change Languages Arch Linux](#change-languages-arch-linux)
-
+  - [Change Languages Arch Linux](#change-languages-arch-linux)
+  - [Backup file .xinitrc manjaro-linux](#backup-file-xinitrc-manjaro-linux)
 
 ## Command Arch Linux
-|      Command                                    |                     Description                               | 
-| :-----                                         |                          :---                              |  
-| xrandr                                          |      Check list resolution monitor             |  
-| xrandr --output "Virtual-1" --mode 1920x1080   |      Change resolution monitor             |  
 
+| Command                                      | Description                   |
+| :------------------------------------------- | :---------------------------- |
+| xrandr                                       | Check list resolution monitor |
+| xrandr --output "Virtual-1" --mode 1920x1080 | Change resolution monitor     |
 
+</br>
+<hr>
 
+## Keybind DWM
+
+| Keybind               | Description                                                 |
+| :-------------------- | :---------------------------------------------------------- |
+| ALT + SHIFT + ENTER   | Open terminal                                               |
+| ALT + J               | Toggle forward and backward between window viewing FORWARD  |
+| ALT + K               | Toggle forward and backward between window viewing BACKWARD |
+| ALT + SHIFT + c       | Close Window on active                                      |
+| ALT + p               | Run program with dmenu                                      |
+| ALT + 1 2 3 4         | Move workspace                                              |
+| ALT + SHIFT + 1 2 3 4 | Move window to different workspace                          |
+| ALT + h               | move space window to left                                   |
+| ALT + l               | move space window to right                                  |
+| ALT + d               | Move window to down                                         |
+| ALT + i               | Move window to up                                           |
+| ALT + SPACE           | Change mode window to float                                 |
+| ALT + B               | hide top bar dmenu                                          |
+| CTRL + SHIFT PgUp     | zoom in and zoom in terminal                                |
+| CTRL + SHIFT + pgDn   | zoom in and zoom out terminal                               |
 
 </br>
 <hr>
 
 ## My Config file .bashrc
+
 ```bash
 function cdf() {
     cd "$(find * -type d | fzf)"
@@ -57,18 +83,22 @@ alias sn='sudo shutdown now'
 <hr>
 
 ## Install Arch Linux
+
 1. synchronizing package database
-  ```cli
+
+```cli
 # pacman -Syy
 ```
 
 2. check partition
-  ```cli
+
+```cli
 # lsblk
 ```
 
 3. format partition
-  ```cli
+
+```cli
 # gdisk /dev/"name disk"
 # gdisk /dev/sda
 ```
@@ -77,34 +107,36 @@ Output :
 ![VirtualBoxVM_XdpMEIa01p](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/6193f2ee-2793-4961-bca6-ef00ce1e46d4)
 
 4. install archlinux keyring package
-  ```cli
+
+```cli
 # pacman -S archlinux-keyring
 ```
 
 5. update package
-  ```cli
+
+```cli
 # pacman -Sy archinstall
 ```
 
 6. trigger installation
-  ```cli
+
+```cli
 # archinstall
 ```
+
 Output Image :
+
 - Setup Partition :
   ![VirtualBoxVM_uCfvdjegzd](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/0247935f-c055-4170-9e88-4c31da1d813b)
   ![bPtMg06mBr](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/60c4b0c2-ebf1-421e-b9a3-a32f356ef796)
-
 - Aditional Package :
   ![M72VmRaGBI](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/86e07e4c-c963-4680-9b20-aa21739a9e91)
-
 - All Setting Installation :
   ![VirtualBoxVM_k5i7UXRfhE](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/608888a8-a93e-44a3-a0db-64a939ea7553)
 
-
-
 7. After installation done reboot or shutdown computer
-  ```cli
+
+```cli
 # reboot
 # shutdown now
 ```
@@ -113,19 +145,23 @@ Output Image :
 
 </br>
 
-
 ## Post Install Arch Linux
+
 - Change session cli to dekstop environment `ALT F1 or F2`
 - Upadate all package
+
 ```cli
 # sudo pacman -Syu
 ```
+
 - Install app
+
 ```cli
 # sudo pacman -S firefox
 ```
 
 - Install yay package
+
 ```cli
 # git clone https://aur.archlinux.org/yay-bin.git
 # cd yay-bin
@@ -136,21 +172,25 @@ Output Image :
 ```
 
 - Install xorg for graphics
+
 ```cli
 # sudo pacman -S xorg
 ```
 
 - Install desktop environment (KDE Plasma)
+
 ```cli
 # sudo pacman -S plasma-desktop
 ```
 
 - Install xorg-xinit
+
 ```cli
 # sudo pacman -S xorg-xinit
 ```
 
 - Add script file .bash_profile
+
 ```cli
 # vim .bash_profile
 
@@ -161,6 +201,7 @@ fi
 ```
 
 - Edit file xinitrc
+
 ```cli
 # vim .xinitrc
 
@@ -169,12 +210,13 @@ exec startplasma-x11
 ```
 
 - Install konsole terminal KDE
+
 ```cli
 # sudo pacman -S konsole
 ```
 
-
 - Install fonts
+
 ```cli
 # sudo pacman -S gnu-free-fonts noto-fonts ttf-jetbrains-mono
 ```
@@ -183,43 +225,50 @@ exec startplasma-x11
 
 </br>
 
-
 ## Install Window Manager dwm
+
 reference : https://dwm.suckless.org/
 
 1. clone dwm
-  ```cli
+
+```cli
 # git clone https://git.suckless.org/dwm
 ```
 
 2. clone dmenu
-  ```cli
+
+```cli
 # git clone https://git.suckless.org/dmenu
 ```
 
 3. clone st
-  ```cli
+
+```cli
 # git clone https://git.suckless.org/st
 ```
 
 4. create folder
-  ```cli
+
+```cli
 # mkdir suckless
 ```
 
 5. move file dwm, dmenu and st to folder suckless
-  ```cli
+
+```cli
 # mv dwm dmenu st suckless/
 ```
 
-6. open file dwm, dmenu and st and install 
-  ```cli
+6. open file dwm, dmenu and st and install
+
+```cli
 # cd dwm
 # sudo make clean install
 ```
 
 7. edit script file .xinitrc (Home directory)
-  ```cli
+
+```cli
 # vim .xinitrc
 
 // Add script
@@ -228,8 +277,9 @@ exec dwm
 ```
 
 8. Keybind dwm
+
 - Open terminal `ALT + SHIFT + ENTER`
-- Toggle forward and backward between window viewing  FORWARD = `ALT + J`, BACKWARD = `ALT + K`
+- Toggle forward and backward between window viewing FORWARD = `ALT + J`, BACKWARD = `ALT + K`
 - Close Window on active `ALT + SHIFT + c`
 - Run program with dmenu `ALT + p`
 - Move workspace `ALT + 1 2 3 4`
@@ -240,21 +290,20 @@ exec dwm
 - hide top bar dmenu `ALT + B`
 - zoom in and zoom out in terminal `CTRL + SHIFT PgUp` and `CTRL + SHIFT + pgDn`
 
-
 </br>
 
-
 ### Patching dwm
+
 1. Download patches : https://dwm.suckless.org/patches/
 2. create folder in `suckless/dwm/patches`
 3. copy file config `cp config.h config.def.h`
 4. install patch `patch -i patches/dwm-name-version.diff`
 5. after isntall patch `sudo make clean install` on folder dwm
 
-
 </br>
 
 ### File .xinitrc
+
 ```bash
 ~/.fehbg &
 xrandr --output "Virtual-1" --mode 1280x720 &
@@ -266,102 +315,98 @@ exec dwm
 
 ```
 
-
-
 </br>
 
-
 ### Set wallpaper
+
 see general command `man feh`
+
 1. install feh `sudo pacman -S feh`
 2. set wallpaper `feh --bg-scale Pictures/name-wallpaper`
 
-
-
 </br>
 
-
 ### Opacity or blur terminal
+
 1. install picom `sudo pacman -S picom`
 2. run picom `picom &`
 3. open folder xdg `cd /etc/xdg/`
 4. open file picom.conf `sudo vim picom.conf`
 5. add script :
-   
+
 ![A83RxMDKBu](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/2af04cc3-f975-4fcf-bd8c-e06ec72ff5cc)
 ![QD7shlnnWe](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/24e2abb8-743c-44f3-b2b6-90e416a158fe)
 ![VirtualBoxVM_wDM4tCMHF3](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/d0a35950-8185-4e41-88e1-e7b254686457)
 
-
-
-
 </br>
 
 ### Generate Color theme with pywal
+
 reference : https://github.com/dylanaraps/pywal
 
 1. Install pywwal `sudo pacman -S python-pywal`
 2. generate color wallpaper which is being used `wal -i wallpaper/name-wallpaper.png`
 3. open `cd .cache/wal` to see color results
-4. add `#include "/home/<USER>/.cache/wal/colors-wal-dwm.h"` in file `config.h` on folder `/dwm` 
-
+4. add `#include "/home/<USER>/.cache/wal/colors-wal-dwm.h"` in file `config.h` on folder `/dwm`
 
 <hr>
 
 </br>
 
-
 # Install App
 
-
 ### Install Docker
+
 **A. Install and Running Dcoker**
 
 1. install docker
-    
-  ```bash
-  sudo pacman -S docker -y
-  ```
+
+```bash
+sudo pacman -S docker -y
+```
 
 2. check version docker
-   
+
 ```bash
 docker --version
 ```
-   
+
 3. install docker desktop, first download docker desktop for arc linux. link : https://docs.docker.com/desktop/release-notes/
-   
 4. and install docker desktop
-   
+
 ```bash
 sudo pacman -U ./docker-desktop-<version>-<arch>.pkg.tar.zst
 ```
 
 5. check docker running or not
+
 ```bash
-sudo systemctl status docker 
+sudo systemctl status docker
 ```
 
 6. if not running run this command
+
 ```bash
 sudo systemctl start docker
 ```
+
 </br>
 
 **B. Command Docker**
-|      Command                                    |                     Description           | 
-| :-----                                         |                          :---              |  
-|  sudo docker version                           |      Check version docker            |  
 
-
+| Command             | Description          |
+| :------------------ | :------------------- |
+| sudo docker version | Check version docker |
 
 </br>
 
 ### Install bat (for cat display)
+
 Reference : https://github.com/sharkdp/bat
 A cat(1) clone with syntax highlighting and Git integration.
+
 1. Install bat
-   
+
 ```bash
 sudo pacman -S bat
 ```
@@ -369,8 +414,9 @@ sudo pacman -S bat
 </br>
 
 ### Install fzf (Fuzzy Finder)
+
 1. Install fzf with yay
-   
+
 ```bash
 yay -S fzf
 ```
@@ -382,30 +428,31 @@ fzf
 ```
 
 3. open folder with fzf
-   
+
 ```bash
 alias cdf='cd $(find * -type d | fzf)'
 ```
 
 4. Custom script fzf
-   
+
 ```bash
  vim ~/.bashrc
 ```
-   
+
 5. add script in file `.bashrc`
-   
- ```bash
- function cdf() {
-   cd "$(find * -type d | fzf)"
- }
- ```
-     
+
+```bash
+function cdf() {
+  cd "$(find * -type d | fzf)"
+}
+```
+
 6. run fzf with custom script `cdf`
 
 </br>
 
 ### Install Audio
+
 1. install pipewire `sudo pacman -S pipewire pipewire-pulse`
 2. install pavucontrol `sudo pacman -S pavucontrol`
 3. Restart computer
@@ -413,64 +460,78 @@ alias cdf='cd $(find * -type d | fzf)'
 </br>
 
 ### Install Kdenlive
+
 reference : https://linux-packages.com/arch-linux/package/kdenlive
+
 1. Install kdenlive and update package
+
    ```cli
     sudo pacman -Sy
-    sudo pacman -S kdenlive 
+    sudo pacman -S kdenlive
    ```
 
-3. Uninstall kdenlive
+2. Uninstall kdenlive
+
    ```cli
-    sudo pacman -Rcns kdenlive 
+    sudo pacman -Rcns kdenlive
    ```
 
 </br>
-
 
 ### Install GIMP
+
 reference : https://archlinux.org/packages/extra/x86_64/gimp/
+
 1. Install GIMP and update package
+
    ```cli
     sudo pacman -Sy
-    sudo pacman -S gimp 
+    sudo pacman -S gimp
    ```
 
-3. Uninstall GIMP
+2. Uninstall GIMP
+
    ```cli
-    sudo pacman -Rcns gimp 
+    sudo pacman -Rcns gimp
    ```
 
 </br>
 
-
 ### Install krita
+
 reference : https://archlinux.org/packages/extra/x86_64/gimp/
+
 1. Install krita and update package
+
    ```cli
     sudo pacman -Sy
-    sudo pacman -S krita 
+    sudo pacman -S krita
    ```
 
-3. Uninstall krita
+2. Uninstall krita
+
    ```cli
-    sudo pacman -Rcns krita 
+    sudo pacman -Rcns krita
    ```
 
 </br>
 
 ### Install Virtualbox
+
 1. first update system
+
    ```bash
     sudo pacman -Syu
    ```
-   
+
 2. Install virtualbox with headers
+
    ```bash
    sudo pacman -S linux$(uname -r | grep -o -E '[0-9]+' | head -n 2 | sed 'N;s/\n//')-headers virtualbox virtualbox-host-dkms
    ```
-   
+
 3. Add user to group
+
    ```bash
    sudo usermod -aG vboxusers $USER
    ```
@@ -478,57 +539,60 @@ reference : https://archlinux.org/packages/extra/x86_64/gimp/
 </br>
 
 ### Install Mysql and MySQL Workbench
+
 Reference : https://gist.github.com/oddlyspaced/8856bd3db5132ef3714ecc40a9fe37ea
 
 1. Updating system
-   
+
    ```bash
    sudo pacman -Syyu
    ```
-   
+
 2. Installing software dependencies
-   
+
    ```bash
    sudo pacman -S git gnome-keyring
    ```
-   
+
 3. Compile and Install MySQL Server, Note : (This might take like ~4 hours since it's compiling the source)
-   
+
    ```bash
    git clone https://aur.archlinux.org/mysql.git
    cd mysql
    makepkg -si
    ```
-   
+
 4. Install MySQL-Workbench
-   
+
    ```bash
    sudo pacman -S mysql-workbench
    ```
-   
+
 5. Setting up database
-    
+
    ```bash
    sudo rm -rf /var/lib/mysql
    sudo mysqld --initialize --user=mysql --basedir=/usr --datadir=/var/lib/mysql
    # ^ Once the above command is executed successfully, make sure to copy paste the demo password displayed at screen!
    ```
+
 6. Enabling the service
-    
+
    ```bash
    sudo systemctl enable --now mysqld
    ```
-   
+
 7. Verifying
-    
+
    ```bash
    mysql -u root -p
    # ^ Enter your dummy password from Part 5
    ```
-   
+
 </br>
 
 ### Install xampp and configuration
+
 reference : https://wiki.archlinux.org/title/XAMPP
 
 1. Download xampp for linux on website https://www.apachefriends.org/download.html
@@ -543,20 +607,25 @@ reference : https://wiki.archlinux.org/title/XAMPP
 
 </br>
 
-
 ### Install Composer
+
 reference : https://getcomposer.org/download
 
 1. Update package
-  ```cli
+
+```cli
 # sudo pacman -Sy
 ```
+
 2. install composer
-  ```cli
+
+```cli
 # sudo pacman -S composer
 ```
+
 3. check version composer
-  ```cli
+
+```cli
 # composer -v
 ```
 
@@ -565,7 +634,9 @@ reference : https://getcomposer.org/download
 </br>
 
 ## Change Languages Arch Linux
+
 1. Add languages by editing `/etc/locale.gen.` Uncomment the languages you want to
+
 ```cli
 #en_SG ISO-8859-1
 en_US.UTF-8 UTF-8
@@ -573,6 +644,7 @@ en_US.UTF-8 UTF-8
 ```
 
 2. Run `locale-gen` to load those languages.
+
 ```cli
 $ sudo locale-gen
 Generating locales...
@@ -582,11 +654,10 @@ Genertaion complete.
 ```
 
 3. Set your system language by editing `vim /etc/locale.conf.` Add `LANG=` and the language
-
 4. Reboot
 
-
 ## Backup file .xinitrc manjaro-linux
+
 ```bash
 #!/bin/bash
 #
