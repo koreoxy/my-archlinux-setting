@@ -21,7 +21,7 @@
     - [Opacity or blur terminal](#opacity-or-blur-terminal)
     - [Generate Color theme with pywal](#generate-color-theme-with-pywal)
 - [Install App](#install-app)
-  - [Install alacritty(terminal)](#install-alacritty-terminal)
+  - [Install alacritty (terminal)](#install-alacritty-terminal)
   - [Install Docker](#install-docker)
   - [Install bat (for cat display)](#install-bat-for-cat-display)
   - [Install fzf (Fuzzy Finder)](#install-fzf-fuzzy-finder)
@@ -358,7 +358,7 @@ reference : https://github.com/dylanaraps/pywal
 
 
 
-### Install alacritty(terminal)
+### Install alacritty (terminal)
 reference : https://github.com/alacritty/alacritty/blob/master/INSTALL.md
 
 1. First, On Arch Linux, you need a few extra libraries to build Alacritty. Here's a pacman command that should install all of them. If something is still found to be missing, please open an issue.
@@ -372,7 +372,7 @@ sudo pacman -S alacritty
 ```
 
 3. Customize setting alacritty
-create file on folder ~/.config/alacritty/alacritty.toml
+create file on folder `~/.config/alacritty/alacritty.toml`
 ```toml
 [font]
 normal = {family = "Hack", style = "Regular"}
