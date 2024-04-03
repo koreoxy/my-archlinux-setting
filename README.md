@@ -78,6 +78,10 @@ function cdf() {
 
 alias sn='sudo shutdown now'
 
+n() {
+  nvim "$@"
+}
+
 ```
 
 </br>
