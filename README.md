@@ -364,6 +364,7 @@ reference : https://github.com/dylanaraps/pywal
 
 ### Install alacritty (terminal)
 reference : https://github.com/alacritty/alacritty/blob/master/INSTALL.md
+Theme : https://github.com/alacritty/alacritty-theme
 
 1. First, On Arch Linux, you need a few extra libraries to build Alacritty. Here's a pacman command that should install all of them. If something is still found to be missing, please open an issue.
 ```bash
