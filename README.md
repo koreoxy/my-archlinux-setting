@@ -35,6 +35,8 @@
   - [Install Composer](#install-composer)
   - [Change Languages Arch Linux](#change-languages-arch-linux)
   - [Backup file .xinitrc manjaro-linux](#backup-file-xinitrc-manjaro-linux)
+- [Fix Error In Arch Linux](#fix-error-in-arch-linux)
+  - [Fix unable to lock database](#fix-unable-to-lock-database)
 
 ## Command Arch Linux
 
@@ -670,7 +672,7 @@ reference : https://getcomposer.org/download
 
 </br>
 
-## Change Languages Arch Linux
+### Change Languages Arch Linux
 
 1. Add languages by editing `/etc/locale.gen.` Uncomment the languages you want to
 
@@ -693,7 +695,7 @@ Genertaion complete.
 3. Set your system language by editing `vim /etc/locale.conf.` Add `LANG=` and the language
 4. Reboot
 
-## Backup file .xinitrc manjaro-linux
+### Backup file .xinitrc manjaro-linux
 
 ```bash
 #!/bin/bash
@@ -764,3 +766,25 @@ get_session(){
 exec $(get_session "$1")
 
 ```
+
+
+
+<hr>
+
+</br>
+
+# Fix Error In Arch Linux
+
+### Fix unable to lock database
+
+reference : https://ostechnix.com/how-to-fix-unable-to-lock-database-error-in-arch-linux/
+
+1. Remove file db.lck
+   ```cli
+   sudo rm /var/lib/pacman/db.lck
+   ```
+
+2. And update again package
+   ```cli
+   sudo pacman -Syu
+   ```
