@@ -64,7 +64,7 @@ static const char unknown_str[] = "n/a";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 
- │ static const struct arg args[] = {
+static const struct arg args[] = {
  	{ kernel_release, "^c#79C5BE^  Arch %s  ", NULL },
 	{ run_command, "^c#79C5BE^ [Updates: ^c#BA9332^%s^c#79C5BE^]",  "aptitude search '~U' | wc -l" },
  	{ cpu_perc, "^c#79C5BE^ [CPU: ^c#BA9332^%s%%^c#79C5BE^]",   NULL },
