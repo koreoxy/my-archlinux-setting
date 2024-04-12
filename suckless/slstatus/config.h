@@ -63,11 +63,14 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
-static const struct arg args[] = {
-	/* function format          argument */
- 	{ run_command, " [ %4s] ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-        { datetime, "[ %s]",           "%a, %b %d %R" },
-        { cpu_perc, " [CPU: %s%%]",      NULL   },
-        { ram_perc, " [RAM: %s%%]",      NULL   },
 
-};
+ │ static const struct arg args[] = {
+ 	{ kernel_release, "^c#79C5BE^  Arch %s  ", NULL },
+	{ run_command, "^c#79C5BE^ [Updates: ^c#BA9332^%s^c#79C5BE^]",  "aptitude search '~U' | wc -l" },
+ 	{ cpu_perc, "^c#79C5BE^ [CPU: ^c#BA9332^%s%%^c#79C5BE^]",   NULL },
+ 	{ ram_perc, "^c#79C5BE^ [RAM: ^c#BA9332^%s%%^c#79C5BE^]",    NULL },
+	{ run_command, "^c#79C5BE^ [<U+F028> %4s] ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+ 	{ datetime, "<U+F017> ^c#ffffff^%s",         "%a %b %-d"},
+ 	{ datetime, "^c#ffffff^ %s",        "%l:%M %p  " },
+ };
+
