@@ -41,6 +41,9 @@
   - [Backup file .xinitrc manjaro-linux](#backup-file-xinitrc-manjaro-linux)
 - [Fix Error In Arch Linux](#fix-error-in-arch-linux)
   - [Fix unable to lock database](#fix-unable-to-lock-database)
+- [Command terminal perhaps help me](#command-terminal-perhaps-help-me)
+  - [Set audio volume from terminal](#set-audio-volume-from-terminal)
+
 
 ## Command Arch Linux
 
@@ -791,4 +794,18 @@ reference : https://ostechnix.com/how-to-fix-unable-to-lock-database-error-in-ar
 2. And update again package
    ```cli
    sudo pacman -Syu
+   ```
+
+
+# Command terminal perhaps help me
+
+### Set audio volume from terminal
+
+1. Gets a list of simple mixer controls
+   ```cli
+    amixer scontrols 
+   ```
+2. and set increse audio with this example
+   ```cli
+    amixer sset 'Master' 100%
    ```
