@@ -14,6 +14,7 @@
   - [My Setup Image](#my-setup-image)
   - [Jump to](#jump-to)
   - [Command Arch Linux](#command-arch-linux)
+  - [Connect Wifi for Laptop](#connect-wifi-for-laptop)
   - [Keybind DWM](#keybind-dwm)
   - [My Config file .bashrc](#my-config-file-bashrc)
   - [Install Arch Linux](#install-arch-linux)
@@ -51,6 +52,32 @@
 | :------------------------------------------- | :---------------------------- |
 | xrandr                                       | Check list resolution monitor |
 | xrandr --output "Virtual-1" --mode 1920x1080 | Change resolution monitor     |
+
+</br>
+<hr>
+
+## Connect Wifi for Laptop
+
+1. insert 
+```cli
+# iwctl
+```
+
+2. show wlan
+```cli
+# station wlan0 show
+```
+
+3. scan wlan
+```cli
+# station wlan0 scan
+```
+
+4. connect wlan wifi
+```cli
+# station wlan0 connect name_wifi
+```  
+
 
 </br>
 <hr>
