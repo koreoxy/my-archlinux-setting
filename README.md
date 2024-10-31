@@ -14,6 +14,7 @@
   - [My Setup Image](#my-setup-image)
   - [Jump to](#jump-to)
   - [Command Arch Linux](#command-arch-linux)
+  - [Active Dual Monitor with xrandr](#active-dual-monitor-with-xrandr)
   - [Connect Wifi for Laptop](#connect-wifi-for-laptop)
   - [Keybind DWM](#keybind-dwm)
   - [My Config file .bashrc](#my-config-file-bashrc)
@@ -55,6 +56,27 @@
 
 </br>
 <hr>
+
+## Active Dual Monitor with xrandr
+
+1. Check List Monitor
+```cli
+# xrandr
+```
+
+2. Set Active
+```cli
+# xrandr --output HDMI-1 --mode 1280x720 --left-of VGA-1 --output VGA-1 --mode 1366x768 --primary
+```
+
+3. Increse Brightness Monitor
+```cli
+# xrandr --output HDMI-1 --brightness 1.2
+```
+
+</br>
+<hr>
+
 
 ## Connect Wifi for Laptop
 
