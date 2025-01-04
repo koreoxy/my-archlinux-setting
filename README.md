@@ -61,17 +61,17 @@
 
 1. Check List Monitor
 ```cli
-# xrandr
+xrandr
 ```
 
 2. Set Active
 ```cli
-# xrandr --output HDMI-1 --mode 1280x720 --left-of VGA-1 --output VGA-1 --mode 1366x768 --primary
+xrandr --output HDMI-1 --mode 1280x720 --left-of VGA-1 --output VGA-1 --mode 1366x768 --primary
 ```
 
 3. Increse Brightness Monitor
 ```cli
-# xrandr --output HDMI-1 --brightness 1.2
+xrandr --output HDMI-1 --brightness 1.2
 ```
 
 </br>
