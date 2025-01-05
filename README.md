@@ -60,17 +60,17 @@
 ## Active Dual Monitor with xrandr
 
 1. Check List Monitor
-```cli
+```vim
 xrandr
 ```
 
 2. Set Active
-```cli
+```vim
 xrandr --output HDMI-1 --mode 1280x720 --left-of VGA-1 --output VGA-1 --mode 1366x768 --primary
 ```
 
 3. Increse Brightness Monitor
-```cli
+```vim
 xrandr --output HDMI-1 --brightness 1.2
 ```
 
