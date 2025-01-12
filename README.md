@@ -23,6 +23,7 @@
   - [Install Window Manager dwm](#install-window-manager-dwm)
     - [Patching dwm](#patching-dwm)
     - [File .xinitrc](#file-xinitrc)
+    - [Install Font](#install-font)
     - [Set wallpaper](#set-wallpaper)
     - [Opacity or blur terminal](#opacity-or-blur-terminal)
     - [Generate Color theme with pywal](#generate-color-theme-with-pywal)
@@ -379,6 +380,37 @@ exec dwm
 ```
 
 </br>
+
+### Install Font
+
+#### Font Hack
+```vim
+sudo pacman -S ttf-hack
+```
+
+#### Font Awesome
+```vim
+sudo pacman -S ttf-font-awesome
+```
+
+
+#### Font Jetbrains
+```vim
+sudo pacman -S ttf-jetbrains-mono
+```
+
+#### Font Nerd Fonts symbols
+```vim
+sudo pacman -S ttf-nerd-fonts-symbols
+```
+
+#### Font Korean
+```vim
+sudo pacman -S ttf-baekmuk
+```
+
+</br>
+
 
 ### Set wallpaper
 
