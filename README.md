@@ -99,7 +99,28 @@ xrandr --output HDMI-1 --brightness 1.2
 4. connect wlan wifi
 ```cli
 # station wlan0 connect name_wifi
-```  
+```
+
+Using nmcli
+1. List device wifi
+```vim
+nmcli device wifi list
+```
+
+2. Rescan device wifi
+```vim
+nmcli device wifi rescan
+```
+
+3. Connect wifi
+```vim
+nmcli device wifi connect access_point_name password your_password
+```
+
+4. Show connection
+```vim
+nmcli connection show
+```
 
 
 </br>
