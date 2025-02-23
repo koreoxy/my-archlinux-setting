@@ -1,0 +1,49 @@
+[env]
+# Pastikan tipe terminal sesuai dan didukung sistem
+TERM = "xterm-256color"
+
+[colors]
+[colors.primary]
+background = "#242424" # Latar belakang hitam
+foreground = "0xFFFFFF" # Teks putih
+
+[cursor]
+style = "Block" # Gaya kursor "Block"
+unfocused_hollow = true # Kursor berlubang ketika tidak aktif
+
+[font]
+size = 12 # Ukuran font
+
+[font.normal]
+family = "Hack" # Font utama
+style = "Regular" # Gaya normal
+
+[font.bold]
+family = "Hack" # Font untuk teks tebal
+style = "Bold" 
+
+[font.italic]
+family = "Hack" # Font untuk teks miring
+style = "Italic"
+
+[scrolling]
+history = 10000 # Riwayat scrolling sebanyak 10.000 baris
+multiplier = 3  # Kecepatan scroll
+
+[window]
+decorations = "full" # Tampilan jendela penuh (termasuk border dan title bar)
+dynamic_title = true # Judul jendela dinamis
+startup_mode = "Windowed" # Mulai dalam mode windowed
+opacity = 1.0 # Transparansi jendela
+
+[window.padding]
+x = 10 # Padding horizontal
+y = 10 # Padding vertikal
+
+[window.dimensions]
+columns = 80 # Jumlah kolom awal
+lines = 24  # Jumlah baris awal
+
+[debug]
+log_level = "warn" # Level log untuk debugging
+
