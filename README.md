@@ -1,6 +1,7 @@
 # My Arch Linux Setting
 
 ## My Setup Image
+![THTUHU](https://github.com/user-attachments/assets/b35539f7-79ae-4740-99c5-bf22af777f33)
 
 ![newdesk](https://github.com/koreoxy/my-archlinux-setting/assets/73381115/260b0325-e2be-4b83-830c-33c0641a9889)
 
