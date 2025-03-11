@@ -29,6 +29,7 @@
     - [Opacity or blur terminal](#opacity-or-blur-terminal)
     - [Generate Color theme with pywal](#generate-color-theme-with-pywal)
 - [Install App](#install-app)
+  - [Install and Update Discord](#install-and-update-discord)
   - [Install alacritty (terminal)](#install-alacritty-terminal)
   - [Install Docker](#install-docker)
   - [Install bat (for cat display)](#install-bat-for-cat-display)
@@ -472,7 +473,31 @@ reference : https://github.com/dylanaraps/pywal
 
 # Install App
 
+### Install and Update Discord
 
+1. Unduh file .tar.gz dari situs resmi Discord:
+🔗 https://discord.com/download
+Pilih versi "Linux" → tar.gz.
+
+2. Ekstrak file yang telah diunduh
+Gunakan perintah berikut untuk mengekstrak file:
+```bash
+tar -xvzf discord-*.tar.gz
+```
+
+3. Pindahkan ke direktori sistem
+Hapus versi lama (jika ada) dan pindahkan yang baru:
+```bash
+sudo rm -rf /opt/discord
+sudo mv discord /opt/
+```
+Note :
+Untuk mengganti nama folder di terminal Linux, gunakan perintah berikut:
+```bash
+mv nama_folder_lama nama_folder_baru
+```
+
+</br>
 
 ### Install alacritty (terminal)
 - reference : https://github.com/alacritty/alacritty/blob/master/INSTALL.md
