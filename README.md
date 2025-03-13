@@ -770,14 +770,57 @@ Reference : https://gist.github.com/oddlyspaced/8856bd3db5132ef3714ecc40a9fe37ea
 reference : https://wiki.archlinux.org/title/XAMPP
 
 1. Download xampp for linux on website https://www.apachefriends.org/download.html
+
 2. open file in directory `Downloads`
-3. run this command `# sudo chmod +x xampp-linux-x64-8.2.12-0-installer.run`
-4. and install xampp with `# ./xampp-linux-x64-8.2.12-0-installer.run`
-5. install other package `# sudo pacman -S libxcrypt-compat` and `# sudo pacman -S net-tools`
-6. after install start xampp apache with this command `# /opt/lampp/lampp startapache`
-7. start mysql `# /opt/lampp/lampp startmysql`
-8. example command to start,stop,restart xampp `# /opt/lampp/xampp start,stop,restart`
+```bash
+cd Downloads
+```
+
+3. run this command 
+```bash
+sudo chmod +x xampp-linux-x64-8.2.12-0-installer.run
+```
+
+4. and install xampp with 
+```bash
+sudo ./xampp-linux-x64-8.2.12-0-installer.run
+```
+
+5. install other package
+```bash
+sudo pacman -S libxcrypt-compat
+sudo pacman -S net-tools
+```
+
+6. after install start xampp apache with this command
+```bash
+sudo /opt/lampp/lampp startapache
+```
+
+7. start mysql 
+```bash
+sudo /opt/lampp/lampp startmysql
+```
+
+8. example command to start,stop,restart xampp 
+```bash
+sudo /opt/lampp/xampp start,stop,restart
+```
+
 9. open localhost in browser `http://localhost/phpmyadmin/`
+
+don't forget to add PATH xampp for run laravel project with PHP from xampp
+add in your .bashrc or .bash_profile
+```bash
+vim .bashrc
+```
+
+copy this path
+
+```bash
+export PATH="/opt/lampp/bin:$PATH"
+```
+
 
 </br>
 
