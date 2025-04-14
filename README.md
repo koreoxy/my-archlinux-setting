@@ -29,6 +29,7 @@
     - [Opacity or blur terminal](#opacity-or-blur-terminal)
     - [Generate Color theme with pywal](#generate-color-theme-with-pywal)
 - [Install App](#install-app)
+  - [Install Flashdisk NTFS](#install-flashdisk-ntfs)
   - [Install and Update Discord](#install-and-update-discord)
   - [Install alacritty (terminal)](#install-alacritty-terminal)
   - [Install Docker](#install-docker)
@@ -472,6 +473,24 @@ reference : https://github.com/dylanaraps/pywal
 </br>
 
 # Install App
+
+
+### Install Flashdisk NTFS
+1. install package ntfs
+   ```bash
+   sudo pacman -S ntfs-3g
+   ```
+3. install package Automount
+   ```bash
+   sudo pacman -S udiskie
+   ```
+5. add command in .xinit file
+   ```bash
+   udiskie &
+   ```
+<hr>
+
+</br>
 
 ### Install and Update Discord
 
