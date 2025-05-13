@@ -839,6 +839,10 @@ copy this path
 ```bash
 export PATH="/opt/lampp/bin:$PATH"
 ```
+Run mysql database
+```bash
+/opt/lampp/bin/mysql -u root
+```
 
 
 </br>
