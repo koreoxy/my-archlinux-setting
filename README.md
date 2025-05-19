@@ -42,6 +42,7 @@
   - [Install Virtualbox](#install-virtualbox)
   - [Install Mysql and MySQL Workbench](#install-mysql-and-mysql-workbench)
   - [Install xampp and configuration](#install-xampp-and-configuration)
+  - [Edit file virtual host on Apache XAMPP](#edit-file-virtual-host-on-apache-xampp)
   - [Install Composer](#install-composer)
   - [Change Languages Arch Linux](#change-languages-arch-linux)
   - [Backup file .xinitrc manjaro-linux](#backup-file-xinitrc-manjaro-linux)
@@ -842,6 +843,54 @@ export PATH="/opt/lampp/bin:$PATH"
 Run mysql database
 ```bash
 /opt/lampp/bin/mysql -u root
+```
+</br>
+
+### Edit file virtual host on Apache XAMPP
+
+1. Open terminal
+```bash
+sudo vim /opt/lampp/etc/extra/httpd-vhosts.conf
+```
+
+2. Add config in file httpd-vhosts.conf
+```bash
+<VirtualHost *:80>
+    DocumentRoot "/opt/lampp/htdocs/blog-website/public"
+    ServerName blog-website.local
+    <Directory "/opt/lampp/htdocs/blog-website/public">
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+```
+
+3. Active config virtual host
+```bash
+sudo vim /opt/lampp/etc/httpd.conf
+```
+and remove sign #
+```bash
+Include etc/extra/httpd-vhosts.conf
+```
+
+4. Add Local Domain
+```bash
+sudo vim /etc/hosts
+```
+and add this example domain
+```bash
+127.0.0.1   blog-website.local
+```
+
+5. Restart Apache Server
+```bash
+sudo /opt/lampp/lampp restartapache
+```
+or
+```bash
+sudo /opt/lampp/lampp restart
 ```
 
 
