@@ -834,6 +834,10 @@ add in your .bashrc or .bash_profile
 ```bash
 vim .bashrc
 ```
+*note stop service apache2 if already running
+```bash
+sudo service apache2 stop
+```
 
 copy this path
 
