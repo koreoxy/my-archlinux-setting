@@ -827,16 +827,17 @@ sudo /opt/lampp/lampp startmysql
 sudo /opt/lampp/xampp start,stop,restart
 ```
 
+*note stop service apache2 if already running
+```bash
+sudo service apache2 stop
+```
+
 9. open localhost in browser `http://localhost/phpmyadmin/`
 
 don't forget to add PATH xampp for run laravel project with PHP from xampp
 add in your .bashrc or .bash_profile
 ```bash
 vim .bashrc
-```
-*note stop service apache2 if already running
-```bash
-sudo service apache2 stop
 ```
 
 copy this path
